@@ -14,6 +14,7 @@
     table {
       width: 500px;
       border-collapse: collapse;
+      position: relative;
     }
 
     td,
@@ -22,14 +23,36 @@
       padding: 10px;
     }
 
+    tbody>tr:nth-child(odd) {
+      background-color: white;
+      font-weight: bold;
+    }
+
+    tbody>tr:nth-child(even) {
+      background-color: lightgrey;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgrey;
+    }
+
     td.num {
       text-align: right;
     }
 
     thead,
     tfoot {
-      background-color: grey;
+      background-color: #383838;
       color: white;
+    }
+
+    thead>tr>th {
+      position: sticky;
+      top: -1px;
+      background-color: #383838;
     }
   </style>
 </head>
@@ -39,6 +62,8 @@
 
   <!-- ANATOMINA PARA TABELAS GRANDES
         TABLE
+          CAPTION
+
           THEAD
               TR, TD, TH
           TBODY
@@ -48,10 +73,11 @@
   -->
 
   <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
       <tr>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 100px;">População</th>
       </tr>
     </thead>
 
@@ -194,11 +220,56 @@
 
     <tfoot>
       <tr>
-        <th>Total de Habitantes</th>
+        <th scope="row">Total de Habitantes</th>
         <td class="num"><strong>213 421 037</strong></td>
       </tr>
     </tfoot>
   </table>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ipsa perferendis quae dolorem natus, voluptatum,
+    vitae impedit dolore dolores itaque consectetur eius, enim deserunt placeat unde eligendi tenetur temporibus quis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quae et quod nobis fugit asperiores nemo veniam
+    recusandae voluptas, omnis explicabo, dicta architecto tenetur id corrupti iure voluptatem vel cumque. Lorem ipsum
+    dolor sit, amet consectetur adipisicing elit. Aperiam tempora laboriosam corporis dolorem quas sapiente neque,
+    consequatur vitae, impedit rerum eveniet provident? Illo possimus quod iusto ab impedit repellat ut? Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Ipsam corrupti tenetur harum nulla alias fuga sed atque earum.
+    Laudantium fuga dolorum minima modi ducimus molestias totam neque sequi inventore pariatur?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ipsa perferendis quae dolorem natus, voluptatum,
+    vitae impedit dolore dolores itaque consectetur eius, enim deserunt placeat unde eligendi tenetur temporibus quis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quae et quod nobis fugit asperiores nemo veniam
+    recusandae voluptas, omnis explicabo, dicta architecto tenetur id corrupti iure voluptatem vel cumque. Lorem ipsum
+    dolor sit, amet consectetur adipisicing elit. Aperiam tempora laboriosam corporis dolorem quas sapiente neque,
+    consequatur vitae, impedit rerum eveniet provident? Illo possimus quod iusto ab impedit repellat ut? Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Ipsam corrupti tenetur harum nulla alias fuga sed atque earum.
+    Laudantium fuga dolorum minima modi ducimus molestias totam neque sequi inventore pariatur?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ipsa perferendis quae dolorem natus, voluptatum,
+    vitae impedit dolore dolores itaque consectetur eius, enim deserunt placeat unde eligendi tenetur temporibus quis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quae et quod nobis fugit asperiores nemo veniam
+    recusandae voluptas, omnis explicabo, dicta architecto tenetur id corrupti iure voluptatem vel cumque. Lorem ipsum
+    dolor sit, amet consectetur adipisicing elit. Aperiam tempora laboriosam corporis dolorem quas sapiente neque,
+    consequatur vitae, impedit rerum eveniet provident? Illo possimus quod iusto ab impedit repellat ut? Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Ipsam corrupti tenetur harum nulla alias fuga sed atque earum.
+    Laudantium fuga dolorum minima modi ducimus molestias totam neque sequi inventore pariatur?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ipsa perferendis quae dolorem natus, voluptatum,
+    vitae impedit dolore dolores itaque consectetur eius, enim deserunt placeat unde eligendi tenetur temporibus quis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quae et quod nobis fugit asperiores nemo veniam
+    recusandae voluptas, omnis explicabo, dicta architecto tenetur id corrupti iure voluptatem vel cumque. Lorem ipsum
+    dolor sit, amet consectetur adipisicing elit. Aperiam tempora laboriosam corporis dolorem quas sapiente neque,
+    consequatur vitae, impedit rerum eveniet provident? Illo possimus quod iusto ab impedit repellat ut? Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Ipsam corrupti tenetur harum nulla alias fuga sed atque earum.
+    Laudantium fuga dolorum minima modi ducimus molestias totam neque sequi inventore pariatur?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ipsa perferendis quae dolorem natus, voluptatum,
+    vitae impedit dolore dolores itaque consectetur eius, enim deserunt placeat unde eligendi tenetur temporibus quis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quae et quod nobis fugit asperiores nemo veniam
+    recusandae voluptas, omnis explicabo, dicta architecto tenetur id corrupti iure voluptatemvel cumque. Lorem ipsum
+    dolor sit, amet consectetur adipisicing elit. Aperiam tempora laboriosam corporis dolorem quas sapiente neque,
+    consequatur vitae, impedit rerum eveniet provident? Illo possimus quod iusto ab impedit repellat ut? Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Ipsam corrupti tenetur harum nulla alias fuga sed atque earum.
+    Laudantium fuga dolorum minima modi ducimus molestias totam neque sequi inventore pariatur?</p>
 </body>
 
 </html>
