@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio de Tabelas</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    thead>tr>th {
+      color: white;
+      background-color: grey;
+      border: 1px solid black;
+      font-size: 1.3em;
+      padding: 10px;
+    }
+
+    tbody>tr>th {
+      border: 1px solid black;
+      font-size: 1.3em;
+      padding: 10px;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .Curzin {
+      color: white;
+      background-color: grey;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    tfoot>tr>th {
+      color: white;
+      background-color: grey;
+      border: 1px solid black;
+      font-size: 1.3em;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2" scope="col">Área</th>
+        <th rowspan="2" scope="col">Disciplina</th>
+        <th colspan="2" scope="col">Notas</th>
+        <th rowspan="2" scope="col">Média</th>
+      </tr>
+      <tr>
+        <th scope="col">Nota 1</th>
+        <th scope="col">Nota 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="4" scope="colgroup">Exatas</th>
+        <td>Matemática</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+      </tr>
+      <tr>
+        <td>Física</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+      </tr>
+      <tr>
+        <td>Química</td>
+        <td>9.2</td>
+        <td>9.5</td>
+        <td>9,3</td>
+      </tr>
+      <tr>
+        <td>Biologia</td>
+        <td>8.8</td>
+        <td>9.5</td>
+        <td>9,2</td>
+      </tr>
+      <tr>
+        <th class="Curzin" scope="col" colspan="4">Média de Exatas</th>
+        <td class="Curzin">9,6</td>
+      </tr>
+
+      <tr>
+        <th scope="col" rowspan="2">Humanas</th>
+        <td>História</td>
+        <td>9.1</td>
+        <td>9.6</td>
+        <td>9,4</td>
+      </tr>
+      <tr>
+        <td>Geográfia</td>
+        <td>9.5</td>
+        <td>9.8</td>
+        <td>9.6</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <th scope="col" colspan="4">Média de Humanas</th>
+      <td class="Curzin">9,5</td>
+    </tfoot>
+  </table>
+</body>
+
+</html>
