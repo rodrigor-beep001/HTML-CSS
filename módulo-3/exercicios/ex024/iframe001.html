@@ -5,26 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estudos de iframe</title>
+
+  <style>
+    iframe {
+      width: 500px;
+      height: 500 px;
+      border: 1px dashed black;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Testando uso de um iframe</h1>
   <p>Acessando o site do
-
-    <iframe src="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/"
-      frameborder="0"></iframe>
+    <!-- Tamanho padrão: 300x150 -->
+    <iframe src="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/" frameborder="0"
+      height="500" scrolling="no">
+      <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/" target="_blank">Módulo 4
+        do Curso de HTML
+        e CSS do Curso em Vídeo</a>
+    </iframe>
 
     para aprender a programar.
   </p>
 
-  <p>O site do
+  <p>O repositório do Gustavo Guanabara
 
 
-    <iframe src="https://www.google.com/webhp?hl=pt-BR&ictx=2&sa=X&ved=0ahUKEwiT6IT70auDAxUCGbkGHfOWBO8QPQgJ"
-      frameborder="0"></iframe>
+    <iframe src="" frameborder="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" height="500">
+      <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositório do
+        Guanabara</a>
+    </iframe>
 
 
-    também é muito legal.
+    também é muito legal
   </p>
 </body>
 
