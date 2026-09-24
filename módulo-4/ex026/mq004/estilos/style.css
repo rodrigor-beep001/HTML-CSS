@@ -46,7 +46,7 @@ img#phone {
 }
 
 img#tablet {
-  display: none;
+  display: block;
 }
 
 img#print {
@@ -54,9 +54,9 @@ img#print {
 }
 
 img#pc {
-  display: none;
+  display: block;
 }
 
 img#tv {
-  display: none;
+  display: block;
 }
