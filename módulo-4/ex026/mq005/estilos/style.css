@@ -30,6 +30,11 @@ i#aborgue {
   cursor: pointer;
 }
 
+i#aborgue:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 menu {
   display: none;
 }
