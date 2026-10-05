@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media-Query</title>
 
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
   <link rel="stylesheet" href="estilos/style.css">
 </head>
 
@@ -13,7 +16,9 @@
   <header>
     <h1>Meu site</h1>
 
-    <menu>
+    <i id="aborgue"><span class="material-symbols-outlined" onclick="clickMenu()">menu</span></i>
+
+    <menu id="itens">
       <ul>
         <li> <a href="#">Opção 1</a> </li>
         <li> <a href="#">Opção 2</a> </li>
@@ -64,6 +69,15 @@
         nobis similique, consequatur odio facere nulla a quibusdam! Deleniti?</p>
     </article>
   </main>
+  <script>
+    function clickMenu() {
+      if (itens.style.display == 'block') {
+        itens.style.display = 'none'
+      } else {
+        itens.style.display = 'block'
+      }
+    }
+  </script>
 </body>
 
 </html>
